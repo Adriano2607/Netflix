@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    background-image: url(../img/poster/pexels-cottonbro-studio-4842573.jpg);
+}
+
+#primeira-pagina {
+    padding: 4em 0 0 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+#titulo {
+    display: inline-flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    align-items: center;
+}
+
+#titulo span {
+    color: white;
+    font-size: 4em;
+    font-family: 'Benguiat Bold', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#descricao {
+    width: 30vw;
+    padding-bottom: 1em;
+}
+
+#descricao p {
+    font-family: 'Karla', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing: 1px;
+
+}
+
+#btn {
+    display: flex;
+    gap: 2em;
+
+}
+
+#btn button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#btn button {
+    padding: 1em 2em 1em 2em;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 5px;
+    background-color: #56504F;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+
+
+}
+
+#btn button img{
+    margin-right: 0.5em;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#logo p {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.6em;
+    font-size: 1.2em;
+
+}
+
+#logo img {
+    height: 4vh;
+    padding-right: 1em;
+}
+
+main aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1 / span 2;
+}
+
+nav ul li{
+   padding-bottom: 3em;
+   box-sizing: border-box;
+}
+
+
+nav ul li a:hover{
+    padding-bottom: 5px;
+    border-bottom: 3px solid red;
+}
+
+#container-segundapagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 0 2em 3em;
+}
+
+#container-segundapagina h2{
+    color: white;
+    font-size: 1.7rem;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: 'Karla', sans-serif;
+}
+
+#cards{
+    display: flex;
+    gap: 20px;
+    padding-top: 1em;
+}
+
+.box{
+    transition: transform 0.3s; 
+}
+
+.box:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.box{
+    height: 30vh;
+    width: 10vw;
+    
+}
+
+#house {
+    background-image: url(../img/poster/houseofcards.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+#anne{
+    background-image: url(../img/poster/netflix-anuncia-que-3a-temporada-de-annie-with-an-e-sera-a-ultima-da-serie-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#lucifer{
+    background-image: url(../img/poster/Lucifer_BbOekQo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#witcher{
+    background-image: url(../img/poster/3606754-witcher_poster.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#ragnarok{
+    background-image: url(../img/poster/ragnarok.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#narcos{
+    background-image: url(../img/poster/narcos.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sabrina{
+    background-image: url(../img/poster/sabrina_vertical-main_rgb.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#modal{
+        display: none; /* Oculta o modal por padrão */
+        position: fixed; /* Posicionamento fixo */
+        z-index: 1; /* Z-index para garantir que o modal fique acima de outros elementos */
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
+      
+}
+
+#video {
+   
+    position: absolute; /* Posicionamento absoluto para centralizar verticalmente */
+    top: 50%; /* Move o topo para o centro vertical */
+    left: 50%; /* Move a esquerda para o centro horizontal */
+    transform: translate(-50%, -50%); /* Volta metade da largura e altura para centralizar completamente */
+    
+  }
+
+/* notebook */
+@media screen and (max-width: 1380px)  {
+    #descricao {
+        width: 40vw;
+        padding-bottom: 1em;
+        text-align: left;
+      }
+  }
+  
+
+
+
+  
+    

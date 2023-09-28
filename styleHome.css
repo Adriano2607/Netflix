@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0 2em;
+}
+
+
+main{
+    flex: 1;
+    background-color: black;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    text-transform: uppercase;
+}
+
+#logo{
+    display: flex;
+    gap: 50px;
+}
+
+#logo img {
+    height: 6vh;
+   
+}
+
+#logop2 {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#container-filmes{
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+#poster img{
+    height: 25vh;
+    width: 24vw;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+#populares h1 , .continueAssistindo h1{
+    color: white;
+    padding-bottom: 0.5em;
+    text-transform: capitalize;
+
+}
+
+#populares{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-top: 2em;
+   
+}
+
+
+
+#container-poster{
+    display: flex;
+    gap: 0.3em;
+   
+}
+
+#poster{
+    transition: transform 0.3s; 
+}
+
+#poster:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+#conteudo-descricao  > p > img{
+    height: 2vh;
+    width: 1vw;
+    margin: 0 0.5em;
+}
+
+
+#conteudo-descricao{
+    padding: 0.5em;
+}
+
+#conteudo-descricao p{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.continueAssistindo{
+    padding-top:2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
