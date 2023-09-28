@@ -2,7 +2,6 @@
 
 Projeto Front End.
 
-![Screenshot 2023-09-28 at 03-46-43 Netflix by Adriano](https://github.com/Adriano2607/Netflix/assets/110434219/5ad1d173-a42c-4130-9ecb-581fe9359076)
+![Screenshot 2023-09-28 at 04-35-00 Netflix by Adriano](https://github.com/Adriano2607/Netflix/assets/110434219/e713eb0e-13c1-450c-accc-7d81b9803edb)
 
-
-![Screenshot 2023-09-28 at 03-47-05 Netflix by Adriano](https://github.com/Adriano2607/Netflix/assets/110434219/484742f9-2595-4f7f-a2d1-765bcc0bc685)
+![Screenshot 2023-09-28 at 04-34-47 Netflix by Adriano](https://github.com/Adriano2607/Netflix/assets/110434219/4460f1fc-1f15-48bb-ae5f-33db18385cd2)
