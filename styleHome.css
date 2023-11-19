@@ -42,6 +42,10 @@ ul{
     text-transform: uppercase;
 }
 
+#entrar{
+    cursor: pointer;
+}
+
 #logo{
     display: flex;
     gap: 50px;
@@ -139,9 +143,33 @@ a{
 }
 
 
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
 
 
+#modallogin{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+background-color: white;
+}
 
 
+#content-login{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
 
+#content-login span{ 
+    float: left;
+
+}
+
+input[type="text"]{
+    margin-bottom: 1em;
+}
 

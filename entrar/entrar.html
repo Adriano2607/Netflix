@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleEntrar.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <title>Netflix by Adriano</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="../index.html">
+            <img src="../img/icon/7124274_netflix_logo_icon.png" alt="logo">
+        </a>
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+
+            <form id="form" action="#">
+
+                <p id="entrar">Entrar</p>
+
+
+
+                <input type="text" required id="nome" placeholder="Digite seu Nome">
+
+
+                <input type="text" required id="senha" placeholder="Digite sua senha" autocomplete="off">
+
+                <input type="button" value="Entrar" id="btn">
+
+                <label for="checkbox1">
+                    <input type="checkbox" id="checkbox1" name="checkbox1" checked>Lembrar de Mim
+                </label>
+
+
+                <p id="novo">Novo por aqui? <span>
+                    <a href="../CriarConta/conta.html">
+                    Assine agora.
+                </a>
+                </span>
+                  </p>
+
+
+            </form>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>Netflix by Adriano</p>
+    </footer>
+
+    <script>
+        document.getElementById("btn").addEventListener('click',function(){
+            sessionStorage.setItem('nome',document.getElementById('nome').value)
+                window.location.href = '../index.html'
+        })
+      
+    </script>
+   
+</body>
+
+
+
+
+</html>

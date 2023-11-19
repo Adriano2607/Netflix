@@ -1,0 +1,132 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 6vh;
+}
+
+main{
+    height: 88vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bck/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11-fotor-20231118214112.jpg);
+    
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+  }
+
+#entrar{
+  font-size: 2.5em;
+  padding-bottom: .5em;
+}
+
+  article{
+    background-color: black;
+    padding: 3em;
+    color: white;
+    width: 17vw;
+    
+    background-color: rgba(0, 0, 0, 0.8); /* 50% de opacidade */
+    border-radius: 1%;
+    
+  }
+
+  input[type="text"],input[type="text"]{
+    height: 5vh;
+    width: 100%;
+    border-radius: .5em;
+    font-family: 'Rubik', sans-serif;
+    background-color: #4D4B4B;
+    border: none;
+
+  }
+
+  input{
+    
+    margin-bottom: 1.5em;
+    color: white;
+  }
+
+
+  
+  input[type="button"]{
+    border-radius: .3em;
+   height: 4vh;
+   width: 100%;
+   cursor: pointer;
+   border: 1px solid #c0c0c0;
+   text-transform: uppercase;
+   color: white;
+   background-color: red;
+   border: none;
+  }
+
+    
+  input[type="checkbox"]{
+   margin-right:.5em;
+  }
+
+
+  label{
+    font-size: .8em;
+   
+  }
+
+  #novo{
+    margin-top: 3em;
+    color: #4D4B4B;
+  }
+
+  form span{
+    color: white;
+    cursor: pointer;
+    
+  }
+
+  form span a{
+  text-decoration: none;
+  color: white;
+  }
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 6vh;
+}
+
+::placeholder{
+  color: white;
+  font-size: 1.1em;
+  
+}
+
+
+#btn{
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1em;
+}
