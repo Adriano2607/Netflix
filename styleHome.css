@@ -173,3 +173,24 @@ input[type="text"]{
     margin-bottom: 1em;
 }
 
+
+
+
+
+#lupa:hover{
+    width: 12vw;
+    height: 2vw;
+    background-color: white;
+    border-radius: 1em;
+    cursor: text;
+    resize: none;
+
+}
+
+
+
+
+#sair{
+  
+ position: absolute;
+}
