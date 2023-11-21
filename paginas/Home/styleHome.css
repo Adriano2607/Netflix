@@ -12,6 +12,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
 }
 
 header{
@@ -60,6 +61,7 @@ ul{
     display: flex;
     align-items: center;
     gap: 1em;
+    font-size: 1em;
 }
 
 #container-filmes{
@@ -190,7 +192,7 @@ input[type="text"]{
 
 
 
-#sair{
+*:hover {
+    z-index: 999;
+  }
   
- position: absolute;
-}

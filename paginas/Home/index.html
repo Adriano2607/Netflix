@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleHome.css">
+    <title>Netflix by Adriano</title>
+    <link rel="icon" href="img/icon/netflix.png" type="image/png">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="/assets/img/icon/7124274_netflix_logo_icon.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Mais Rescentes</a></li>
+                    <li><a href="#">Minha Lista</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="logop2">
+
+            <img src=" /assets/img/icon/lupa.png" alt="lupa" id="lupa">
+            <span>INFANTIL</span>
+            <img src="/assets/img/icon/gift.png" alt="presente">
+            <img src="/assets/img/icon/sino.png" alt="sino">
+
+
+            <span id="entrar">ENTRAR</span>
+
+
+        </div>
+    </header>
+
+    <main>
+        <section id="populares">
+
+            <div>
+                <h1>Populares na Netflix</h1>
+
+                <div id="container-poster">
+                    <div id="poster">
+                        <img src="/assets/img/poster/round6.jpg" alt="">
+
+                        <div id="conteudo-descricao">
+                            <p> 2021 | <img src="/assets/img/icon/18.png" alt=""> | 1 temporada | Suspenses</p>
+
+
+                        </div>
+                    </div>
+
+                    <div id="poster">
+                        <img src="/assets/img/poster/rua.jpg" alt="">
+                        <div id="conteudo-descricao">
+                            <p>2021 | <img src="/assets/img/icon/16.png" alt="">| 1h 47min | Terror</p>
+
+
+                        </div>
+                    </div>
+                    <div id="poster">
+                        <a href="PageStranger/stranger.html">
+                            <img src="/assets/img/poster/Stranger_Things_Temporada_3_Poster.jpg" alt="">
+                            <div id="conteudo-descricao">
+                                <p>2016 | <img src="/assets/img/icon/16.png" alt="">| 4 temporadas | Ficção científica</p>
+
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="poster">
+                        <img src="/assets/img/poster/dias.jpg" alt="">
+                        <div id="conteudo-descricao">
+                            <p>2022 | <img src="/assets/img/icon/16.png" alt="">| 1 temporada | Reality TV</p>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <section class="continueAssistindo">
+
+            <div id="card">
+                <h1 id="continuar">Faca login para ver recomendacoes</h1>
+
+                <div id="container-poster">
+
+                    <div id="poster">
+
+                        <img src="/assets/img/poster/power.jpg" alt="" id="filme1">
+
+                        <div id="conteudo-descricao">
+                            <p> 2020 | <img src="/assets/img/icon/16.png" alt="">| 1h 53min | Ação</p>
+
+
+
+                        </div>
+                    </div>
+                    <div id="poster">
+
+                        <img src="/assets/img/poster/mae.jpg" alt="" id="filme2">
+
+                        <div id="conteudo-descricao">
+                            <p>2023 | <img src="/assets/img/icon/14.png" alt=""> | 1h 57min | Ação</p>
+
+                        </div>
+                    </div>
+
+                    <div id="poster">
+
+                        <img src="/assets/img/poster/jumanji.jpg" alt="" id="filme3">
+
+                        <div id="conteudo-descricao">
+                            <p> 2019 | <img src="/assets/img/icon/14.png" alt="">| 2h 3min | Fantasia</p>
+
+
+                        </div>
+                    </div>
+
+                    <div id="poster">
+
+                        <img src="/assets/img/poster/blood.jpg" alt="" id="filme4">
+
+                        <div id="conteudo-descricao">
+                            <p>2020 | <img src="/assets/img/icon/18.png" alt=""> | 1h 49min | Ação</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+    <script>
+
+
+        if (sessionStorage.getItem('nome')) {
+            ter()
+            trocarFilmes()
+        }
+
+
+        document.getElementById('entrar').addEventListener('click', function () {
+            window.location.href = '/paginas/entrar/entrar.html'
+        })
+
+
+        function ter() {
+
+            let nome = sessionStorage.getItem('nome')
+            document.getElementById("entrar").innerHTML = 'Bem Vindo, ' + nome;
+            document.getElementById("continuar").innerHTML = 'continue assistindo como ' + nome;
+
+        
+
+            const h1 = document.createElement('span')
+
+
+            
+            h1.innerHTML = 'SAIR'
+            h1.style.textDecoration = 'underline'
+            h1.style.cursor = 'pointer'
+
+
+
+            h1.addEventListener('click', function () {
+                sessionStorage.removeItem('nome')
+                window.location.reload();
+            });
+
+
+            document.getElementById('logop2').appendChild(h1)
+           
+        }
+
+
+
+
+        function trocarFilmes(){
+            const img = document.getElementById('filme1')
+            img.src = '/assets/img/poster/madaghascar.jpg'
+       
+            const img2 = document.getElementById('filme2')
+            img2.src = '/assets/img/poster/ben10.jpg'
+
+            const img3 = document.getElementById('filme3')
+            img3.src = '/assets/img/poster/croods.jpg'
+
+            const img4 = document.getElementById('filme4')
+            img4.src = '/assets/img/poster/acasa.jpg'
+       
+       
+        }
+
+
+    </script>
+</body>
+
+
+
+</html>
+
+
+
