@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Benguiat Bold';
-    src: url('/assets/fonts/Benguiat\ Bold.ttf') format('truetype');
+    src: url('../../assets/fonts/Benguiat\ Bold.ttf') format('truetype');
     /* Substitua pelo caminho real do arquivo da fonte */
 }
 
@@ -26,9 +26,9 @@ main {
     flex: 1;
     display: grid;
     grid-template-columns: 100px 1fr;
-    background-image: url(/assets/img/poster/pexels-cottonbro-studio-4842573.jpg);
-}
+    background-image: url(../../assets/img/poster/pexels-cottonbro-studio-4842573-min.jpg);
 
+}
 #primeira-pagina {
     padding: 4em 0 0 3em;
     display: flex;
@@ -169,46 +169,46 @@ nav ul li a:hover{
 }
 
 #house {
-    background-image: url(/assets/img/poster/houseofcards.webp);
+    background-image: url(../../assets/img/poster/houseofcards.webp);
    background-repeat: no-repeat;
    background-size: cover;
 
 }
 
 #anne{
-    background-image: url(/assets/img/poster/netflix-anuncia-que-3a-temporada-de-annie-with-an-e-sera-a-ultima-da-serie-1.jpg);
+    background-image: url(../../assets/img/poster/netflix-anuncia-que-3a-temporada-de-annie-with-an-e-sera-a-ultima-da-serie-1-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
 #lucifer{
-    background-image: url(/assets/img/poster/Lucifer_BbOekQo.jpg);
+    background-image: url(../../assets/img/poster/Lucifer_BbOekQo-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #witcher{
-    background-image: url(/assets/img/poster/3606754-witcher_poster.jpg);
+    background-image: url(../../assets/img/poster/3606754-witcher_poster-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
 #ragnarok{
-    background-image: url(/assets/img/poster/ragnarok.jpg);
+    background-image: url(../../assets/img/poster/ragnarok.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #narcos{
-    background-image: url(/assets/img/poster/narcos.webp);
+    background-image: url(../../assets/img/poster/narcos.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #sabrina{
-    background-image: url(/assets/img/poster/spn.jpg);
+    background-image: url(../../assets/img/poster/spn.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

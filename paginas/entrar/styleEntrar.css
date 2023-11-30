@@ -23,7 +23,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/img/bck/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11-fotor-20231118214112.jpg);
+    background-image: url(/assets/img/bck/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11-fotor-20231118214112-min.jpg);
     
 }
 
@@ -51,7 +51,7 @@ form{
     
   }
 
-  input[type="text"],input[type="text"]{
+  input[type="text"],input[type="text"],input[type='password']{
     height: 5vh;
     width: 100%;
     border-radius: .5em;

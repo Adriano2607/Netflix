@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,43 +12,33 @@
     <header>
         <div id="logo">
             <a href="../index.html">
-            <img src="/assets/img/icon/7124274_netflix_logo_icon.png" alt="logo">
-        </a>
+                <img src="/assets/img/icon/7124274_netflix_logo_icon-min.png" alt="logo">
+            </a>
         </div>
     </header>
 
-
     <main>
         <article>
-
             <form id="form" action="#">
+                <p id="entrar">Sign In</p>
 
-                <p id="entrar">Entrar</p>
+                <input type="text" required id="nome" placeholder="Enter your Name">
 
+                <input type="password" required id="senha" placeholder="Enter your password" autocomplete="off">
 
-
-                <input type="text" required id="nome" placeholder="Digite seu Nome">
-
-
-                <input type="text" required id="senha" placeholder="Digite sua senha" autocomplete="off">
-
-                <input type="button" value="Entrar" id="btn">
+                <input type="button" value="Sign In" id="btn">
 
                 <label for="checkbox1">
-                    <input type="checkbox" id="checkbox1" name="checkbox1" checked>Lembrar de Mim
+                    <input type="checkbox" id="checkbox1" name="checkbox1" checked>Remember Me
                 </label>
 
-
-                <p id="novo">Novo por aqui? <span>
-                    <a href="../CriarConta/conta.html">
-                    Assine agora.
-                </a>
-                </span>
-                  </p>
-
-
+                <p id="novo">New here? <span>
+                        <a href="../CriarConta/conta.html">
+                            Sign up now.
+                        </a>
+                    </span>
+                </p>
             </form>
-
         </article>
     </main>
 
@@ -57,16 +47,11 @@
     </footer>
 
     <script>
-        document.getElementById("btn").addEventListener('click',function(){
-            sessionStorage.setItem('nome',document.getElementById('nome').value)
-                window.location.href = '/paginas/Home/index.html'
+        document.getElementById("btn").addEventListener('click', function () {
+            sessionStorage.setItem('nome', document.getElementById('nome').value)
+            window.location.href = '/paginas/Home/index.html'
         })
-      
     </script>
-   
 </body>
-
-
-
 
 </html>
